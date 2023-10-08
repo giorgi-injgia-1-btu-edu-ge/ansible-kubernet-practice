@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install docker
+    ansible.builtin.apt:
+      name: docker.io
